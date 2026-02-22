@@ -4,7 +4,7 @@
 
 A modular 3D spatial layout tool built with **Three.js** and **TypeScript**. This prototype demonstrates the core mechanics required for architectural and office planning software, focusing on spatial intelligence, collision detection, and user interaction.
 
-![Screenshot](./screenshot.ong)
+![Screenshot](./screenshot.png)
 
 ## 🚀 Key Features
 * **Grid-Snapping Logic:** Uses Raycasting and mathematical coordinate snapping to ensure all objects perfectly align to a strict 1x1 meter grid.
