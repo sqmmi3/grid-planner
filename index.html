@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid Planner</title>
+    <style>
+      body { margin: 0; overflow: hidden; background: #f0f0f0; font-family: sans-serif; }
+      canvas { display: block; }
+      #ui {
+        position: absolute; top: 20px; left: 20px;
+        background: white; padding: 20px; border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); width: 220px;
+        z-index: 100;
+      }
+      button {
+        width: 100%; padding: 10px; margin-top: 10px;
+        cursor: pointer; border: none; border-radius: 4px;
+        background: #ff4444; color: white; font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ui">
+      <h2 style="margin: 0 0 10px 0;">Grid Planner</h2>
+      <p style="font-size: 0.8rem; color: #666;">Click grid to place blocks. Blocks snap to 1m increments.</p>
+      <div style="margin: 15px 0;">
+        <label for="module-selector" style="font-size: 0.8rem; color: #666; font-weight: bold;">Select Module:</label>
+        <div id="module-selector" style="display: flex; gap: 5px; margin-top: 5px;">
+          <button id="btn-base" style="background: #3498db; margin-top: 0;">Base</button>
+          <button id="btn-tall" style="background: #95a5a6; margin-top: 0;">Tall Rack</button>
+          <button id="btn-flat" style="background: #2ecc71; margin-top: 0;">Flat Rug</button>
+        </div>
+      </div>
+      <button id="btn-clear" style="width: 100%; padding: 10px; cursor: pointer; background: #ff4444; color: white; border: none; border-radius: 4px;">Clear Layout</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
